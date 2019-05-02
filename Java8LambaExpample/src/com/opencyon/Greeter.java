@@ -14,6 +14,7 @@ public class Greeter {
 }
 class Add{
 	public int addNumber(int x, int y) {
+		System.out.println(x + "" +y);
 		return x+y;
 	}
 }
