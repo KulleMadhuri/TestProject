@@ -1,0 +1,14 @@
+.table.table-striped .minimal_cell {
+    background: white none;
+    border-width: 0;
+}
+
+.dl-horizontal dt{
+    text-align: left;
+    width: auto;
+    padding-right: 1em;
+}
+
+.dl-horizontal dd{
+    margin-left: 0;
+}

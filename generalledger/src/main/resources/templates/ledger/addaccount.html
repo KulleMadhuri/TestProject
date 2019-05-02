@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Add Account</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		    <div class="navbar-header">
+		    	<a class="navbar-brand" href="/">General Ledger</a>
+		    </div>
+		    	<ul class="nav navbar-nav">
+		    	<li><a href="/ledger">Home</a></li>
+		    </ul>
+	  	</div>
+	</nav>
+	<div class="container">
+		<h3>Create Account</h3>
+		<form action="/ledger/accounts/add" method="post">
+			<div class="form-group">
+				<label>Account Name:</label>
+				<input type="text" class="form-control" name="name" />
+			</div>
+			<div class="form-group">
+				<label>Account Number:</label>
+				<input type="text" class="form-control" name="number" />
+			</div>
+		    <div class="form-group">
+		        <label for="type">Account Type:</label>
+		        <select class="form-control" id="type" name="type">
+		            <option>CREDIT</option>
+		            <option>DEBIT</option>
+		        </select>
+		    </div>
+			<button type="submit" class="btn btn-default">Add</button>
+		</form>	
+	</div>
+</body>
+</html>
